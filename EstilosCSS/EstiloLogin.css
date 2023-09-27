@@ -1,0 +1,201 @@
+.boldNo {
+    font-weight: 0 !important;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');*/
+/* background: linear-gradient(to bottom, #0b3857, #054b79); */
+@font-face {
+    font-family: 'Montserrat'!important;
+    src: url('../font/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  :root{
+    /*--fuente: 'Montserrat', sans-serif;*/
+    /* --ancho-contenedor: 1200px; */
+  
+    --silver-0: #2C2C2C;
+    --silver-1: #4F4F4F;
+    --silver-2: #717171;
+    --silver-3: #929292;
+    --silver-4: #c5c5c5;
+    --silver-5: #ebebeb;
+  
+  
+    --blue-0: #111A2C;
+    --blue-1: #0b3857;
+    --blue-2: #175d8c;
+    --blue-3: #2477AF;
+    --blue-4: #4A9DD5;
+    --blue-5: #70C1F7;
+  
+  
+    --green-0: #10393B;
+    --green-1: #0b5457;
+    --green-2: #166E72;
+    --green-3: #278F93;
+    --green-4: #43ACB0;
+    --green-5: #70EFF7;
+  
+  
+    --red-0: #3B1010;
+    --red-1: #570B0B;
+    --red-2: #721616;
+    --red-3: #932727;
+    --red-4: #B04343;
+    --red-5: #F77070;
+  
+  
+    --gold-0: #3B2A10;
+    --gold-1: #573F0B;
+    --gold-2: #725916;
+    --gold-3: #937627;
+    --gold-4: #B09B43;
+    --gold-5: #F7C870;
+  
+  
+    --purple-0: #25103B;
+    --purple-1: #330B57;
+    --purple-2: #481672;
+    --purple-3: #622793;
+    --purple-4: #7E43B0;
+    --purple-5: #B670F7;
+  }
+  
+  
+  body {
+    background: var(--blue-1);
+    /* background: linear-gradient(to top, #333, #555); */
+    font-family: "Montserrat" !important;
+  }
+  .login-dark {
+    margin-top: 20% !important;
+    /* height: auto !important; */
+    background-size: cover;
+    position: relative;
+  }
+  
+  .login-dark form {
+    max-width: 420px;
+    width: 90%;
+    background-color: #ebebeb;
+    padding: 40px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    box-shadow: 0px 0px 15px var(--blue-0);
+  }
+  
+  form h2,
+  h6 {
+    color: #0b3857 !important;
+    font-weight: bold !important;
+  }
+  
+  .login-dark .illustration {
+    text-align: center;
+    padding: 15px 0 20px;
+    font-size: 100px;
+    color: #2980ef;
+  }
+  
+  .login-dark form .form-control {
+    background: none;
+    border-radius: 5px !important;
+    /* border-bottom: 1px solid #434a52; */
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    color: #0b3857 !important;
+    background: #fcfcfc;
+    /* box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.371); */
+  }
+  
+  input:focus {
+    background: #e4edf8 !important;
+    color: white !important;
+    transition: all 0.3s;
+  }
+  
+  .login-dark form .btn-primary {
+    background: #0b3857;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: none;
+  }
+  
+  .login-dark form .btn-primary:hover,
+  .login-dark form .btn-primary:active {
+    background: #0b578a;
+    outline: none;
+  }
+  
+  .login-dark form .forgot {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+  }
+  
+  .login-dark form .forgot:hover,
+  .login-dark form .forgot:active {
+    opacity: 1;
+    text-decoration: none;
+  }
+  
+  .login-dark form .btn-primary:active {
+    transform: translateY(1px);
+  }
+  
+  .Gifcargando {
+    text-align: center;
+  }
+  .logoLogin{
+    width: 100px;
+    height: 100px;
+    margin-top: -70px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px black;
+    border: solid 2px rgb(248, 244, 244);
+  }
+  .ValidacionUsuario {
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #0b3857;
+    margin: 0px;
+    /* text-shadow: 1px 1px 1px #0b3857; */
+  }
+  
+  .ValidacionNoExiste{
+    font-weight: bold; 
+    padding: 5px 10px;
+    color: #d83f3f;
+    margin: 0px;
+  }
+  
+  
+  .sesionExpirada{
+    margin-top: 10px !important;
+    width: 40%;
+    color: #e02020 !important;
+    background-color: #ebebeb;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold !important;
+  
+    /* transform: translate(-50%, -50%); */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* color: #fff; */
+    /* box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); */
+  }
