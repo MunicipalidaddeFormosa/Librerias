@@ -9,3 +9,26 @@ function mo(){
         $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
     }
 }
+
+$(document).ready(function () {
+    $("#username").on("blur", function () {
+      $("#resultadoUsuario")
+        .html(
+          '<img class="Gifcargando" src="../Librerias/img/loading.gif" width="30px" height="30px"/>'
+        )
+        .fadeOut(100);
+  
+      var username = $(this).val();
+      var dataString = "username=" + username;
+  
+      $.ajax({
+        type: "POST",
+        url: "ajax/validarUsuarioLogin.php",
+        data: dataString,
+        success: function (data) {
+          $("#result-username").fadeIn(1000).html(data);
+        },
+      });
+    });
+  });
+  
